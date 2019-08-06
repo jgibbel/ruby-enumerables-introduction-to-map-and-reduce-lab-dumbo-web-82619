@@ -55,9 +55,10 @@ end
 
 def reduce_to_all_true(source_array)
   i = 0 
+  no = false
   bool = true
   while source_array[i] do 
-    source_array[i] == false ? return false : i+=1
+    source_array[i] == false ? return no : i+=1
   end
   return bool
 end
